@@ -19,14 +19,14 @@
 
 ### Установка пакета bottle
 #### Windows.
-Выполните следующие команды в командной строке:
+Выполните следующие команды в командной строке: <br>
 pip install bottle
 
 #### Linux.
-Выполните следующие команды в командной строке:
-sudo apt update
-sudo apt install python-bottle
+Выполните следующие команды в командной строке: <br>
+sudo apt update <br> 
+sudo apt install python-bottle <br>
 
 ## РАЗРАБОТЧИКИ
-Уржумова Яна fullstack
+Уржумова Яна fullstack <br>
 Усмонова Муниса Султоналиевна fullstack

@@ -1,11 +1,11 @@
 % rebase('layout.tpl', title='Home', year=year)
 
 <div class="jumbotron">
-    <img src="static\images\name.jpg">
-    <p class="lead"><b>Omniscient Reader's Viewpoint Wiki</b></p>
+    <p align="center"><img src="static\images\header.jpg"></p>
+    <p class="lead"> <img src="static\images\site-logo.png" width="80dp"> <b>Omniscient Reader's Viewpoint Wiki</b></p>
     <p></p>
     <p>ORV Wiki is a collaborative project dedicated to the novel Omniscient Reader's Viewpoint by Sing Shong. We aim to create a comprehensive and reliable encyclopedia and reference for everything related to the novel.</p>
-    <p><a href="https://omniscient-readers-viewpoint.fandom.com/wiki/Kim_Dokja" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+    <p align="center"><b>!!!WARNING!!!</b><br>This site contains spoilers.</p>
 </div>
 
 <div class="row">

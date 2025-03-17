@@ -17,10 +17,15 @@
 
 ## УСТАНОВКА
 
-### Установка пакета curl
+### Установка пакета bottle
 #### Windows.
 Выполните следующие команды в командной строке:
 pip install bottle
+
+#### Linux.
+Выполните следующие команды в командной строке:
+sudo apt update
+sudo apt install python-bottle
 
 ## РАЗРАБОТЧИКИ
 Уржумова Яна fullstack

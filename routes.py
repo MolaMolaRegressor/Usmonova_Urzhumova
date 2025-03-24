@@ -20,7 +20,6 @@ def contact():
     """Renders the contact page."""
     return dict(
         title='Contact',
-        message='Your contact page.',
         year=datetime.now().year
     )
 

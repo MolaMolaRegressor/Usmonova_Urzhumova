@@ -8,6 +8,7 @@
     <p>ORV Wiki is a collaborative project dedicated to the novel Omniscient Reader's Viewpoint by Sing Shong. We aim to create a comprehensive and reliable encyclopedia and reference for everything related to the novel.</p>
     <h2 align="center"><b>!!!WARNING!!!<b></h2>
     <p align="center"><br>This site contains spoilers.</p>
+    <p align="center"><br>Read at your own risk.</p>
 </div>
 
 <div class="row">

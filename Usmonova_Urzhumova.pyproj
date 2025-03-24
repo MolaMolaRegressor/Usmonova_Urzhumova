@@ -49,9 +49,12 @@
     <Content Include="static\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="static\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="static\fonts\MontserratUnderline-VariableFont_wght.ttf" />
     <Content Include="static\images\about.jpg" />
     <Content Include="static\images\header.jpg" />
     <Content Include="static\images\name.jpg" />
+    <Content Include="static\images\orv-logo.ico" />
+    <Content Include="static\images\orv.ico" />
     <Content Include="static\images\site-logo.png" />
     <Content Include="static\scripts\bootstrap.js" />
     <Content Include="static\scripts\bootstrap.min.js" />

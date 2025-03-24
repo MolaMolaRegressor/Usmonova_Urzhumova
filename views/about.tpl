@@ -1,6 +1,8 @@
 % rebase('layout.tpl', title=title, year=year)
 
 <h2>{{ title }}.</h2>
+<h3>Information about Wiki.</h3>
+<p>We are a non-profit organization that created the site for informational purposes only. The site is an educational project aimed at practicing the use of ready-made templates and is a tribute to the novel "Omniscient Reader's Viewpoint".</p>
 <h3>Information about novel.</h3>
 <p align="center"><img src="static\images\about.jpg" height="480dp"></p>
 <p></p>

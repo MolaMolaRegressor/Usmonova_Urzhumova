@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
+    <Content Include="static\content\style.css" />
     <Content Include="static\content\bootstrap.css" />
     <Content Include="static\content\bootstrap.min.css" />
     <Content Include="static\content\site.css" />
@@ -49,13 +50,20 @@
     <Content Include="static\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="static\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="static\images\hsy_sq.jpg" />
+    <Content Include="static\images\kdj_sq.jpg" />
     <Content Include="static\fonts\MontserratUnderline-VariableFont_wght.ttf" />
     <Content Include="static\images\about.jpg" />
     <Content Include="static\images\header.jpg" />
+    <Content Include="static\images\lgy_sq.jpg" />
     <Content Include="static\images\name.jpg" />
     <Content Include="static\images\orv-logo.ico" />
     <Content Include="static\images\orv.ico" />
     <Content Include="static\images\site-logo.png" />
+    <Content Include="static\images\uri_sq.jpg" />
+    <Content Include="static\images\ydh_sq.jpg" />
+    <Content Include="static\images\yma_sq.jpg" />
+    <Content Include="static\images\ysa_sq.png" />
     <Content Include="static\scripts\bootstrap.js" />
     <Content Include="static\scripts\bootstrap.min.js" />
     <Content Include="static\scripts\jquery-1.10.2.intellisense.js" />
@@ -71,6 +79,7 @@
     <Content Include="static\scripts\respond.js" />
     <Content Include="static\scripts\respond.min.js" />
     <Content Include="static\scripts\_references.js" />
+    <Content Include="views\characters.tpl" />
     <Content Include="views\about.tpl" />
     <Content Include="views\contact.tpl" />
     <Content Include="views\index.tpl" />

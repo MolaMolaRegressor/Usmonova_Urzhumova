@@ -7,63 +7,11 @@
     <link rel="shortcut icon" href="/orv-logo.ico" type="images/x-icon"/>
     <link rel="stylesheet" type="text/css" href="/static/content/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
+    <link rel="stylesheet" type="text/css" href="/static/content/style.css" />
     
     <script src="/static/scripts/modernizr-2.6.2.js"></script>
-    <style>
-        .btn-spin {
-        border-radius: 5px;
-        color: white;
-        transition: .2s linear;
-        background: #0094FF;
-    }
-
-    .btn-spin:hover {
-        -webkit-transform: rotateZ(5deg);
-        -ms-transform: rotateZ(5deg);
-        transform: rotateZ(5deg);
-    }
-    <style/>
-
-    <style>
-        p {
-        font-size: large;
-        font-family: 'Courier New';
-        font-weight:lighter;
-        }
-
-    </style>
-    <style>
-        h2 { 
-        font-size: 180%; 
-        font-family: Verdana, Arial, Helvetica, sans-serif; 
-        color: #0094FF; 
-       }
-    </style>
-     <style>
-        h3 { 
-        font-size: 120%; 
-        font-family: Verdana, Arial, Helvetica, sans-serif; 
-        color: #0094FF; 
-       }
-    </style>
-    <style>
-        .btn-new {
-          box-shadow: 0 5px 15px 0 rgba(0, 148, 255, 1);
-          transition: 0.5s;
-        }
-
-        .btn-new:hover {
-          transform: translate(0,-3px);
-          box-shadow: 0 20px 40px 0 rgba(0, 148, 255, 1);
-        }
-    </style>
-    <style>
-        address {
-          font-size: large;
-          font-family: 'Courier New';
-          font-weight:lighter;
-        }
-    </style>
+    
+}
 </head>
 
 <body>
@@ -82,6 +30,7 @@
                     <li><a href="/home">Home</a></li>
                     <li><a href="/about">About</a></li>
                     <li><a href="/contact">Contact</a></li>
+                    <li><a href="/characters">Characters</a></li>
                 </ul>
             </div>
         </div>

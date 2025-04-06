@@ -1,0 +1,66 @@
+
+.btn-spin {
+    border-radius: 5px;
+    color: white;
+    transition: .2s linear;
+    background: #0094FF;
+}
+
+.btn-spin:hover {
+    -webkit-transform: rotateZ(5deg);
+    -ms-transform: rotateZ(5deg);
+    transform: rotateZ(5deg);
+}
+
+p {
+    font-size: large;
+    font-family: 'Courier New';
+    font-weight: lighter;
+}
+
+h2 {
+    font-size: 180%;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #0094FF;
+}
+
+h3 {
+    font-size: 120%;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #0094FF;
+}
+
+.btn-new {
+    box-shadow: 0 5px 15px 0 rgba(0, 148, 255, 1);
+    transition: 0.5s;
+}
+
+.btn-new:hover {
+    transform: translate(0,-3px);
+    box-shadow: 0 20px 40px 0 rgba(0, 148, 255, 1);
+}
+
+address {
+    font-size: large;
+    font-family: 'Courier New';
+    font-weight: lighter;
+}
+
+.product-wrapper {
+    display: block;
+    width: fit-content;
+    float: left;
+    transition: width .2s;
+}
+
+.product {
+    display: block;
+    border: 1px solid #0094FF;
+    border-radius: 3px;
+    position: relative;
+    background: #fff;
+    margin: 0 20px 20px 0;
+    text-decoration: none;
+    color: #474747;
+    z-index: 0;
+    height: 200px;

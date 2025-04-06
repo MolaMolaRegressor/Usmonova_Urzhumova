@@ -1,7 +1,7 @@
 % rebase('layout.tpl', title='Home', year=year)
 
 
-<div class="jumbotron" colour="#474747">
+<div class="jumbotron">
     <p align="center"><img src="static\images\header.jpg"></p>
     <p class="lead"> <img src="static\images\site-logo.png" width="80dp"> <b>Omniscient Reader's Viewpoint Wiki</b></p>
     <p></p>

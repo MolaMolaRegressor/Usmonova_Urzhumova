@@ -5,7 +5,6 @@
 
 <ul class="products clearfix">
 	<li class="product-wrapper">
-		
 		<a href="https://omniscient-readers-viewpoint.fandom.com/wiki/Kim_Dokja" class="product">
 		<img src="static\images\kdj_sq.jpg">
 		<p align="center">Kim Dokja</p></a>
@@ -133,20 +132,4 @@
 		<img src="static\images\uri_sq.jpg">
 		<p align="center">Uriel</P></a>
 	</li>
-	<li class="product-wrapper">
-		<a href="https://omniscient-readers-viewpoint.fandom.com/wiki/Yoo_Sangah" class="product">
-		<img src="static\images\ysa_sq.png">
-		<p align="center">Yoo Sangah</P></a>
-	</li>
-	<li class="product-wrapper">
-		<a href="https://omniscient-readers-viewpoint.fandom.com/wiki/Yoo_Mia" class="product">
-		<img src="static\images\yma_sq.jpg">
-		<p align="center">Yoo Mia</P></a>
-	</li>
-	<li class="product-wrapper">
-		<a href="https://omniscient-readers-viewpoint.fandom.com/wiki/Lee_Gilyoung" class="product">
-		<img src="static\images\lgy_sq.jpg">
-		<p align="center">Lee Gilyoung</P></a>
-	</li>
-
 </ul>

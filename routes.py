@@ -42,3 +42,13 @@ def characters():
         message='Your application description page.',
         year=datetime.now().year
     )
+
+@route('/orders')
+@view('orders')
+def characters():
+    """Renders the about page."""
+    return dict(
+        title='Orders',
+        message='Your application description page.',
+        year=datetime.now().year
+    )

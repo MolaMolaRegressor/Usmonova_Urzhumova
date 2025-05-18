@@ -11,7 +11,6 @@
     
     <script src="/static/scripts/modernizr-2.6.2.js"></script>
     
-}
 </head>
 
 <body>

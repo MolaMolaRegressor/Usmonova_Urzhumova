@@ -45,7 +45,7 @@ def characters():
 
 @route('/orders')
 @view('orders')
-def characters():
+def orders():
     """Renders the about page."""
     return dict(
         title='Orders',

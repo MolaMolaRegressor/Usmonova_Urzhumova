@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }} - Omniscient Reader's Viewpoint Wiki</title>
     <link rel="shortcut icon" href="/orv-logo.ico" type="images/x-icon"/>
@@ -11,7 +11,6 @@
     
     <script src="/static/scripts/modernizr-2.6.2.js"></script>
     
-}
 </head>
 
 <body>
@@ -31,6 +30,7 @@
                     <li><a href="/about">About</a></li>
                     <li><a href="/contact">Contact</a></li>
                     <li><a href="/characters">Characters</a></li>
+                    <li><a href="/orders">Orders</a></li>
                 </ul>
             </div>
         </div>

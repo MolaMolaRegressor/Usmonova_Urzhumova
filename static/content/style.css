@@ -64,3 +64,26 @@ address {
     color: #474747;
     z-index: 0;
     height: 200px;
+}
+
+.orders-container {
+    margin-top: 20px;
+}
+
+.order-card {
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #cceaff;
+}
+
+.order-date {
+    color: #666;
+    font-size: 0.9em;
+}
+
+textarea {
+    max-width: 230px;
+    min-width: 230px;
+}

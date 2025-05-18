@@ -9,13 +9,8 @@ ORDERS_JSON = Path(__file__).parent / "orders.json"
 
 def load_orders():
     if ORDERS_JSON.exists():
-        try:
-            with open(ORDERS_JSON, 'r', encoding='utf-8') as f:
-                return json.load(f)
-        except UnicodeDecodeError:
-            # ≈сли UTF-8 не работает, пробуем другие кодировки
-            with open(ORDERS_JSON, 'r', encoding='cp1251') as f:
-                return json.load(f)
+        with open(ORDERS_JSON, 'r', encoding='utf-8') as f:
+            return json.load(f)
     return []
 
 def save_orders(orders):
@@ -29,8 +24,9 @@ def show_orders():
     return dict(
         title='Orders',
         year=datetime.now().year,
-        orders=list(reversed(orders)), # ѕередаем загруженные заказы в шаблон
-        show_modal=True
+        orders=list(reversed(orders)), # ѕередаем загруженные заказы в шаблон, 
+                                       # переворачиваем дл€ того чтобы новые заказы были сверху
+        show_modal=False
     )
 
 @post('/orders')
@@ -40,7 +36,7 @@ def handle_orders_post():
     phone = request.forms.get('Phone')
     details = request.forms.get('Details')
     orders = load_orders()
-    show_modal = True
+    show_modal = True                   # ¬сплывающее окно
     if check(phone):
         orders.append({'id': len(orders)+1, 'name': name, 
                        'description': details, 'phone': phone, 
@@ -51,7 +47,8 @@ def handle_orders_post():
     return dict(
         title='Orders',
         year=datetime.now().year,
-        orders=list(reversed(orders)),  # ѕередаем загруженные заказы в шаблон
+        orders=list(reversed(orders)),  # ѕередаем загруженные заказы в шаблон, 
+                                        # переворачиваем дл€ того чтобы новые заказы были сверху
         show_modal = show_modal
     )
 

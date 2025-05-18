@@ -82,3 +82,8 @@ address {
     color: #666;
     font-size: 0.9em;
 }
+
+textarea {
+    max-width: 230px;
+    min-width: 230px;
+}

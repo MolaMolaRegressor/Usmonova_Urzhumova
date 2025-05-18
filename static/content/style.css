@@ -66,22 +66,19 @@ address {
     height: 200px;
 }
 
-.order-wrapper {
-    display: block;
-    width: fit-content;
-    float: left;
-    transition: width .2s;
+.orders-container {
+    margin-top: 20px;
 }
 
-.order {
-    display: block;
-    border: 1px solid #0094FF;
-    border-radius: 3px;
-    position: relative;
-    background: #fff;
-    margin: 0 20px 20px 0;
-    text-decoration: none;
-    color: #474747;
-    z-index: 0;
-    height: fit-content;
+.order-card {
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #cceaff;
+}
+
+.order-date {
+    color: #666;
+    font-size: 0.9em;
 }

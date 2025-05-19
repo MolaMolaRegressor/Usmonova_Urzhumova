@@ -3,7 +3,8 @@
 <h2>{{ title }}.</h2>
 <h3>Create New Order</h3>
 <form action="/orders" method="post">
-    <p><input type="text" name="Name" placeholder="Your name" required></p>
+    <p><input type="text" name="Name" pattern="[A-Za-z]{2,}"
+    placeholder="Your name" required></p>
     <p><textarea name="Details" placeholder="Order Details"></textarea></p>
     <p><input
     type="numbers"

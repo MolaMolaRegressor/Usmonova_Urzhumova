@@ -15,6 +15,7 @@ def load_news():
     except:
         return []
 
+
 def save_news(news):
     with open(NEWS_JSON, 'w', encoding='utf-8') as f:
         json.dump(news, f, ensure_ascii=False, indent=2)

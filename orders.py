@@ -6,7 +6,7 @@ import json
 import re
 from pathlib import Path
 
-ORDERS_JSON = Path(__file__).parent / "orders.json"
+ORDERS_JSON = Path(__file__).parent/ "data" / "orders.json"
 
 def load_orders():
     try:

@@ -24,10 +24,10 @@ def save_news(news):
 def show_news():
     news = load_news()
     return dict(
-        title='Актуальные новинки',
+        title='Latest Releases',
         year=datetime.now().year,
         news=list(reversed(news)),
-        show_modal=False
+        show_modal=False  # Make sure this is included
     )
 
 @post('/news')
@@ -37,12 +37,11 @@ def handle_news_post():
     description = request.forms.get('Description')
     date = request.forms.get('Date')
     news = load_news()
-    show_modal = True
+    show_modal = False  # Initialize as False
     
-    # Проверка даты
+    # Date validation
     try:
         datetime.strptime(date, "%Y-%m-%d")
-        show_modal = False
         news.append({
             'id': len(news)+1, 
             'author': author, 
@@ -52,11 +51,11 @@ def handle_news_post():
         })
         save_news(news)
     except ValueError:
-        pass
+        show_modal = True  # Only set to True if validation fails
 
     return dict(
-        title='Актуальные новинки',
+        title='Latest Releases',
         year=datetime.now().year,
         news=list(reversed(news)),
-        show_modal=show_modal
+        show_modal=show_modal  # Make sure this is included
     )

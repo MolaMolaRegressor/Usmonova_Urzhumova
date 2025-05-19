@@ -1,41 +1,42 @@
 % rebase('layout.tpl', title=title, year=year)
 
 <h2>{{ title }}</h2>
-<h3>Добавить новинку</h3>
+<h3>Add New Release</h3>
 <form action="/news" method="post">
-    <p><input type="text" name="Author" pattern="[A-Za-zА-Яа-я]{2,}"
-    placeholder="Имя автора или никнейм" required></p>
-    <p><textarea name="Description" placeholder="Описание новинки" required></textarea></p>
+    <p><input type="text" name="Author" pattern="[A-Za-z]{2,}"
+    placeholder="Author name or nickname" required></p>
+    <p><textarea name="Description" placeholder="Release description" required></textarea></p>
     <p><input 
     type="date" 
     name="Date" 
-    placeholder="Дата публикации" 
+    placeholder="Release date" 
     required></p>
-    <p><input type="submit" class="btn btn-new" value="Добавить новинку"></p>
+    <p><input type="submit" class="btn btn-new" value="Add Release"></p>
 </form>
 <br>
+% show_modal = show_modal if 'show_modal' in locals() else False
 % if show_modal:
   <dialog id="modal" open>
-    <p>Некорректная дата! Используйте формат ГГГГ-ММ-ДД.</p>
+    <p>Invalid date! Please use YYYY-MM-DD format.</p>
     <form method="dialog">
       <button>OK</button>
     </form>
   </dialog>
 % end
 <br>
-<h3>Последние новинки</h3>
+<h3>Latest Releases</h3>
 <div class="news-container">
     % if news:
         % for item in news:
             <div class="news-card">
-                <h4>Новинка #{{ item['id'] }}</h4>
-                <p><strong>Автор:</strong> {{ item['author'] }}</p>
-                <p><strong>Описание:</strong> {{ item['description'] }}</p>
-                <p><strong>Дата публикации:</strong> {{ item['date'] }}</p>
-                <p class="news-date">Добавлено: {{ item['added_date'] }}</p>
+                <h4>Release #{{ item['id'] }}</h4>
+                <p><strong>Author:</strong> {{ item['author'] }}</p>
+                <p><strong>Description:</strong> {{ item['description'] }}</p>
+                <p><strong>Release date:</strong> {{ item['date'] }}</p>
+                <p class="news-date">Added: {{ item['added_date'] }}</p>
             </div>
         % end
     % else:
-        <p>Пока нет новинок. Будьте первым!</p>
+        <p>No releases yet. Be the first to add one!</p>
     % end
 </div>

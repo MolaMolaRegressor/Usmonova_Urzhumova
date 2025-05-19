@@ -50,8 +50,10 @@ def characters():
 @route('/news')
 @view('news')
 def news_page():
-    """Renders the news page."""
+    """Renders the news/releases page."""
     return dict(
-        title='News',
-        year=datetime.now().year
+        title='Latest Releases',
+        year=datetime.now().year,
+        news=[],  # Initialize empty news list
+        show_modal=False  # Initialize show_modal as False
     )

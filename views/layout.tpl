@@ -31,6 +31,7 @@
                     <li><a href="/contact">Contact</a></li>
                     <li><a href="/characters">Characters</a></li>
                     <li><a href="/orders">Orders</a></li>
+                    <li><a href="/news">News</a></li>
                 </ul>
             </div>
         </div>

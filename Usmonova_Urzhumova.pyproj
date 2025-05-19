@@ -46,6 +46,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="data\" />
     <Folder Include="static\" />
     <Folder Include="static\content\" />
     <Folder Include="static\fonts\" />
@@ -54,6 +55,9 @@
     <Folder Include="views\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="data\news.json">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="orders.json" />
     <Content Include="requirements.txt" />
     <Content Include="static\content\style.css" />

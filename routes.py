@@ -7,6 +7,7 @@ from datetime import datetime
 import json
 from pathlib import Path
 import orders
+import news
 
 @route('/')
 @route('/home')
@@ -43,5 +44,14 @@ def characters():
     return dict(
         title='Characters',
         message='Your application description page.',
+        year=datetime.now().year
+    )
+
+@route('/news')
+@view('news')
+def news_page():
+    """Renders the news page."""
+    return dict(
+        title='News',
         year=datetime.now().year
     )

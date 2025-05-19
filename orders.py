@@ -1,3 +1,4 @@
+from asyncio.windows_events import NULL
 from audioop import reverse
 from bottle import route, view, post, request
 from datetime import datetime
@@ -5,13 +6,16 @@ import json
 import re
 from pathlib import Path
 
-ORDERS_JSON = Path(__file__).parent / "orders.json"
+ORDERS_JSON = Path(__file__).parent/ "data" / "orders.json"
 
 def load_orders():
-    if ORDERS_JSON.exists():
-        with open(ORDERS_JSON, 'r', encoding='utf-8') as f:
-            return json.load(f)
-    return []
+    try:
+        if ORDERS_JSON.exists():
+            with open(ORDERS_JSON, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        return []
+    except:
+        return []
 
 def save_orders(orders):
     with open(ORDERS_JSON, 'w', encoding='utf-8') as f:
